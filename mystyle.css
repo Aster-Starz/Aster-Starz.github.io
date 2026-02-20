@@ -1,0 +1,43 @@
+
+body {
+font-size: 1em;
+font-weight: normal;
+font-family: monospace;
+color: #000000;
+text-align: left;
+background-color: #f9d5ff 
+}
+
+h1 {
+font-size: 1.8em;
+font-weight: bold;
+font-family: monospace;
+color: #000000;
+text-align: center;
+}
+
+
+a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #a0893c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #88732c;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #bca65b;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
