@@ -1,0 +1,160 @@
+body {
+  width: 1000px;
+  min-width: 720px;
+  margin: 0 auto;
+font-size: 1em;
+font-weight: normal;
+font-family: monospace;
+ color: #341539;
+ text-align: left;
+  
+}
+main { clear:left }
+div#skipnav {
+ 	position: relative;
+ 	right: 12.5%;
+}
+div.info {
+ 	width: 32%;
+ 	font-size: 1.1em;
+ 	float: left;
+}
+nav {
+ 	clear: left;
+}
+
+nav ul {
+
+ 	list-style-type: none;
+
+}
+nav ul li {
+
+ 	float: left;
+
+ 	margin-right: 3em;
+margin-bottom: 3em
+}
+
+
+nav ul li a {
+
+ 	padding: 0.25em 1em;
+
+ 	text-decoration: none; /* no underline */
+
+ 	background-color: #726081; /* pale bluish white */
+  
+ 	color: #4312AE; /* dark blue */
+
+ 	border: 2px solid #341539;
+
+ 	border-top-left-radius: 1em 1em; /* rounded corner! */
+
+ 	border-top-right-radius: 1em 1em; /* another rounded corner */   
+  
+   border-bottom-left-radius: 1em 1em;
+  
+  border-bottom-right-radius: 1em 1em; 
+}
+
+nav ul li a:hover, nav ul li a:focus {
+
+ 	color: #664593;
+
+ 	background-color: #dab4ff;
+
+ 	font-weight: bold;
+
+}
+
+
+BODY { background-color: #f9d5ff }
+h1 {
+  font-size: 1.8em;
+ font-weight: bold;
+ font-family: monospace;
+ color: #664593;
+text-align: center;
+  width: auto;
+ padding: 5 px;
+ margin: 5 px;
+background-color:#cbb5e8;
+border: ridge;
+border-color: #726081 
+}
+h2 {
+  font-size: 1.8em;
+ font-weight: bold;
+ font-family: monospace;
+ color: #664593;
+  text-align: center;
+ padding: 5 px;
+ margin: 5 px;
+background-color:#cbb5e8;
+border: ridge;
+border-color: #726081 
+}
+h4 { font-size: large;
+font-weight: bold;
+font-family: monospace;
+color: #664593;
+  text-align: center;
+   padding: 99 px;
+ margin: 1 px;
+background-color:#f9d5ff;
+}
+
+body {font-size: medium;
+font-weight: normal;
+color: #664593;
+}
+
+ tr {
+                padding-top: 10px;
+                border-bottom: 1px dashed;
+                padding-bottom: 10px;
+                background-color:#726081;
+                color:white;
+                padding-left:5px;
+                }   
+
+            td {
+                border: 1p dashed #664593;
+                padding:8px;
+                        }
+
+
+            tr:hover {
+                background-color: #ddd;
+                }
+
+ 
+
+  a:link {
+    color: #664593;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #341539;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #a26498;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #9d85be;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+    .info {
+                width: 99%;
+                font-size: 0.9em;
+                }
