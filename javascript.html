@@ -19,8 +19,7 @@
       }
         </style>
     </head>
-    <body>
-        
+    <body onload="updateTime()">
         <div>
 	      <a href="#main">Skip to main content</a>
 	    </div>
@@ -42,6 +41,15 @@
         function ShowAlert(){
             alert ("Haiii! Teehee!!");
         }
+			    <div id="clock"></div>
+			function updateTime(){
+				var now = new Date();
+				var hours = now.getHours();
+				var minutes = now.getMinutes();
+				var seconds = now.getSecondS();
+				var currentTime = hours + '.' + minutes + '.' + seconds;
+				var myClock = document.getElementByld('clock');
+				myClock.innerHTML = currentTime;
         </script> 
             
         <script>
