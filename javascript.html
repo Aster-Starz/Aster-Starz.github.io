@@ -42,6 +42,11 @@
             alert ("Haiii! Teehee!!");
         }
 			    <div id="clock">
+// get all parts of the current time
+				var now = new Date();
+				var hours = now.getHours();
+				var minutes = now.getMinutes();
+				var seconds = now.getSecondS();
 			function updateTime(){
 			//splice them together into a character string named "currentTime"
 				var currentTime = hours + '.' + minutes + '.' + seconds;
