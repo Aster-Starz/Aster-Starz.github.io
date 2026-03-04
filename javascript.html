@@ -1,86 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
+<!doctype html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="styles/mystyle.css" media="screen">
-	<meta charset="utf-8">
-    <title> Web Portfolio: Aster Whisler's javascript page</title>
-  <style> 
-    button{ 
-    font size: 1.1;
-        background color: #d29ef2;
-        color: #8c09b2;
-        border: 2px solid #fcd3ff;
-        box-shadow: 4px 4px 4px #8c09b2;
-      }
-      button:hover, buttin:focus, button:active {
-          color:#d29ef2;
-          background-color:#8c09b2;
-          cursor:pointer;
-      }
+        <link type="text/css" rel="stylesheet" href="styles/mystyle.css" media="screen" />
+        <meta charset="utf-8" />
+        <title>Web Portfolio: Aster Whisler's javascript page</title>
+         <script>
+             
+              alert("Javascript is working");
+                function showAlert() {
+                    alert("function showAlert was called");
+                    var myText = "GELP.";
+                    alert(myText);
+                }
+                     function ShowAlert(){
+                         alert ("Haiii! Teehee!!");
+                     }
+                  
+                function updateTime(){
+                	// get all parts of the current time
+                	var now = new Date();
+                	var hours = now.getHours();
+                	var minutes = now.getMinutes();
+                	var seconds = now.getSeconds();
+                	//splice them together into a character string named "currentTime"
+                	var currentTime = hours + ':' + minutes + ':' + seconds;
+                	//get the clock div
+                	var myClock = document.getElementById('clock');
+                	//write the currentTime string to the clock div
+                	myClock.innerHTML = currentTime;
+                }
+            </script>
+        <style>
+            button{
+            font size: 1.1;
+                background color: #d29ef2;
+                color: #8c09b2;
+                border: 2px solid #fcd3ff;
+                box-shadow: 4px 4px 4px #8c09b2;
+              }
+              button:hover, buttin:focus, button:active {
+                  color:#d29ef2;
+                  background-color:#8c09b2;
+                  cursor:pointer;
+              }
         </style>
+        
     </head>
     <body onload="updateTime()">
         <div>
-	      <a href="#main">Skip to main content</a>
-	    </div>
-        <h1> Web Portfolio: Javascript</h1>
-         <nav>
-        <ul> 
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="accessibility.html">Accessibility</a></li>
-            <li><a href="usability.html">Usability</a></li>
-            <li><a href="graphics.html">Graphicss</a></li>
-            <li><a href="javascript.html">Javascript</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="video.html">Video</a></li>
-        </ul>
-        </nav>  
-        <main id= "main">
-        <button onclick="ShowAlert()">Show alert</button>
-        <script>
-        function ShowAlert(){
-            alert ("Haiii! Teehee!!");
-        }
-			    <div id="clock">
-			function updateTime(){
-             //get all parts of the current time
-				var now = new Date();
-				var hours = now.getHours();
-				var minutes = now.getMinutes();
-				var seconds = now.getSecondS();
-			//splice them together into a character string named "currentTime"
-				var currentTime = hours + '.' + minutes + '.' + seconds;
-				//get the clock div
-				var myClock = document.getElementByld('clock');
-				//write the currentTime string to the clock div
-				myClock.innerHTML = currentTime;
-				</div>
-        </script> 
-            
-        <script>
-            alert ('Javascript is working');
-            function showAlert(){
-            alert ('function showAlert was called');
-            var myText = "GELP.";
-            alert (myText);
-            }</script>
-            
-            <!-- Example 1 (Fixed, no cap T in myText) -->
-            <script> function showAlert(){
-            var myText = "Hello world";
-            alert (myText);
-                }</script>
-            <!-- Example 2 (Misssing end quote on Hello World)-->
-             <script> function showAlert(){
-            var myText = "Hello world";
-            alert (myText);
-                }</script>
-            <!-- Example 3 (Fixed,function is mispelled.) -->
-             <script> function showAlert(){
-            var myText = "Hello world";
-            alert (myText);
-                }</script>
+            <a href="#main">Skip to main content</a>
+        </div>
+        <h1>Web Portfolio: Javascript</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="usability.html">Usability</a></li>
+                <li><a href="graphics.html">Graphicss</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <button onclick="ShowAlert()">Show alert</button>
+           
+        <div id="clock" />
         </main>
-    <!-- The content of your web page will go here-->
-    </body>>
+        <!-- The content of your web page will go here-->
+    </body>
+
 </html>
