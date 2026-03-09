@@ -16,10 +16,7 @@
                      function ShowAlert(){
                          alert ("Haiii! Teehee!!");
                      }
-        </script>
-        
-        <div class="clock">
-            <script>
+                  
                 function updateTime(){
                 	// get all parts of the current time
                 	var now = new Date();
@@ -54,7 +51,6 @@
                 	myClock.innerHTML = currentTime;
                 }
             </script>
-            </div>
         <style>
             button{
             font size: 1.1;
@@ -69,7 +65,8 @@
                   cursor:pointer;
               }
             div#clock {
-                box-shadow: 4px 4px 4px #8c22da;
+            border: 2px dotted #d5baff;
+                box-shadow: 4px 4px 4px #8c09b2;
             }
         </style>
         
@@ -92,7 +89,8 @@
         </nav>
         <main id="main">
             <button onclick="ShowAlert()">Show alert</button>
-           
+           <br />
+            <br />
         <div id="clock" />
         </main>
         <!-- The content of your web page will go here-->
