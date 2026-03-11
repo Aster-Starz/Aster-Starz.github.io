@@ -1,5 +1,4 @@
 <!doctype html>
-<!doctype html>
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="styles/mystyle.css" media="screen" />
@@ -8,7 +7,7 @@
          <script>
              
               alert("Javascript is working");
-                function showAlert() {
+                function ShowAlert() {
                     alert("function showAlert was called");
                     var myText = "GELP.";
                     alert(myText);
@@ -25,13 +24,13 @@
                 	var seconds = now.getSeconds();
                     // add  leading zero's to minutes and seconds
                     if (minutes < 10){
-                        minutes='0' = minutes
+                        minutes='0' + minutes;
                     }
                     if (seconds < 10){
-                        seconds='0' = seconds
+                        seconds='0' + seconds;
                     }
                     // get time of day (am or pm)
-                    ig (hours >=12 && hours < 24) {
+                    if (hours >=12 && hours < 24) {
                         var timeOfDay = 'pm';
                     }
                     else { 
@@ -42,9 +41,9 @@
                         hours = hours - 12;
                     }
                     
-                    }
+                    
                 	//splice them together into a character string named "currentTime"
-                	var currentTime = hours + ':' + minutes + ':' + seconds + '' timeOfDay;
+                	var currentTime = hours + ':' + minutes + ':' + seconds + ' ' + timeOfDay;
                 	//get the clock div
                 	var myClock = document.getElementById('clock');
                 	//write the currentTime string to the clock div
@@ -65,13 +64,13 @@
                   cursor:pointer;
               }
             div#clock {
-            border: 2px dotted #d5baff;
-                box-shadow: 4px 4px 4px #8c09b2;
+               font-size: large;
+                font-family: sans-serif
             }
         </style>
         
     </head>
-    <body onload="setinterval('updateTime()',1000)">
+    <body onload="setInterval('updateTime()',1000)">
         <div>
             <a href="#main">Skip to main content</a>
         </div>
@@ -91,7 +90,7 @@
             <button onclick="ShowAlert()">Show alert</button>
            <br />
             <br />
-        <div id="clock" />
+            <div id="clock"></div>
         </main>
         <!-- The content of your web page will go here-->
     </body>
