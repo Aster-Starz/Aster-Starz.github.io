@@ -1,9 +1,31 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <link type="text/css" rel="stylesheet" href="styles/mystyle.css" media="screen" />
-        <meta charset="utf-8" />
+        <link type="text/css" rel="stylesheet" href="styles/mystyle.css" media="screen">
+        <meta charset="utf-8">
         <title>Web Portfolio: Aster Whisler's javascript page</title>
+            
+        <style>
+             div#clock {
+                display: block;
+               font-size: large;
+                font-family: sans-serif
+            }
+            
+            button {
+                font size: 1.1;
+                background color: #d29ef2;
+                color: #8c09b2;
+                border: 2px solid #fcd3ff;
+                box-shadow: 4px 4px 4px #8c09b2;
+              }
+              button:hover, buttin:focus, button:active {
+                  color:#d29ef2;
+                  background-color:#8c09b2;
+                  cursor:pointer;
+              }
+           
+        </style>
          <script>
              
               alert("Javascript is working");
@@ -72,29 +94,12 @@
                  }
              }
             </script>
-        <button onclick="toggleClock()" id="clockButton">Show Clock</button>
-        <style>
-            button{
-            font size: 1.1;
-                background color: #d29ef2;
-                color: #8c09b2;
-                border: 2px solid #fcd3ff;
-                box-shadow: 4px 4px 4px #8c09b2;
-              }
-              button:hover, buttin:focus, button:active {
-                  color:#d29ef2;
-                  background-color:#8c09b2;
-                  cursor:pointer;
-              }
-            div#clock {
-                display: block;
-               font-size: large;
-                font-family: sans-serif
-            }
-        </style>
+   
+    
         
     </head>
     <body onload="setInterval('updateTime()',1000)">
+             <button onclick="toggleClock()" id="clockButton">Show Clock</button>
         <div>
             <a href="#main">Skip to main content</a>
         </div>
@@ -112,8 +117,8 @@
         </nav>
         <main id="main">
             <button onclick="ShowAlert()">Show alert</button>
-           <br />
-            <br />
+           <br>
+            <br>
             <div id="clock"></div>
         </main>
         <!-- The content of your web page will go here-->
